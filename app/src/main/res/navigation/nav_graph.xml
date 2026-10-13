@@ -9,11 +9,10 @@
 
     app:startDestination="@id/homeFragment">
 
-
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.jeiu.mynavigationapp.HomeFragment"
-        android:label="Home"
+        android:label="Home Page"
         tools:layout="@layout/fragment_home">
 
         <action
@@ -22,11 +21,10 @@
 
     </fragment>
 
-
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.jeiu.mynavigationapp.MenuFragment"
-        android:label="Menu"
+        android:label="Menu Page"
         tools:layout="@layout/fragment_menu">
 
         <action
@@ -35,19 +33,17 @@
 
     </fragment>
 
-
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.jeiu.mynavigationapp.DetailFragment"
-        android:label="Detail"
+        android:label="Detail Page"
         tools:layout="@layout/fragment_detail">
 
         <argument
             android:name="subject"
             app:argType="string"
-            android:defaultValue="선택 없음" />
+            android:defaultValue="No item selected" />
 
     </fragment>
-
 
 </navigation>
